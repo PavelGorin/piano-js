@@ -1,0 +1,46 @@
+.main {
+  background-color: #d1833a7a;
+  min-height: 87vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.piano {
+  display: flex;
+}
+
+.piano__button {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.piano__button_white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.piano__button_white.active {
+  background-color: #CCC;
+}
+
+.piano__button_black {
+  --width: 60px;
+  color: white;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.piano__button_black.active {
+  background-color: #333;
+}
+
+.footer {
+  background-color: #d1833a7a;
+  display: flex;
+  justify-content: center;
+
+}
